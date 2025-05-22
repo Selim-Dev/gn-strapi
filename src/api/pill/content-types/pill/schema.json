@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pills",
+  "info": {
+    "singularName": "pill",
+    "pluralName": "pills",
+    "displayName": "Pill"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "blocks"
+    },
+    "Color": {
+      "type": "enumeration",
+      "enum": [
+        "red",
+        "black",
+        "blue"
+      ]
+    },
+    "Image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
